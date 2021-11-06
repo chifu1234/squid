@@ -1,0 +1,9 @@
+tasks:
+  - init: |
+      sudo apt install ed -y
+      ./bootstrap.sh
+      ./configure
+      make
+      make install
+    command: |
+      squid
